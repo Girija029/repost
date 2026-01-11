@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Girija Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+        }
+
+        /* TOP PROFILE */
+        .top {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            animation: fade 1.2s ease;
+        }
+
+        .profile {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 4px solid #00e5ff;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 48px;
+        }
+
+        .role {
+            font-size: 20px;
+            margin-top: 15px;
+            opacity: 0.85;
+        }
+
+        /* CONTENT */
+        .content {
+            padding: 80px 20px;
+        }
+
+        h2 {
+            font-size: 36px;
+            color: #00e5ff;
+            margin: 90px 0 25px;
+            text-align: center;
+        }
+
+        .card {
+            background: #1c2b33;
+            padding: 25px;
+            margin: 15px auto;
+            width: 70%;
+            border-radius: 15px;
+            transition: 0.3s;
+            animation: fade 1s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        @keyframes fade {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* MOBILE */
+        @media(max-width:768px) {
+            h1 {
+                font-size: 36px;
+            }
+
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- TOP -->
+    <div class="top">
+        <img src="C:\Users\Grijha\OneDrive\Documents\index.httml\folio.jpeg" class="profile">
+        <h1>Girija Muruganantham</h1>
+        <p class="role">Java Developer | Frontend Enthusiast</p>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+
+        <h2>About Me</h2>
+        <div class="card">
+            I am a passionate Java Developer with strong knowledge in Object Oriented Programming,
+            frontend technologies and problem solving. I enjoy building clean, responsive and
+            user-friendly applications.
+        </div>
+
+        <h2>Education</h2>
+        <div class="card">
+            <b>SSLC – Our Lady of Health Matric HSS</b><br>
+            Percentage: 80%
+        </div>
+        <div class="card">
+            <b>BE CSE – Kings College of Engineering</b><br>
+            CGPA: 8.3
+        </div>
+
+        <h2>Skills</h2>
+        <div class="card">
+            <b>Java</b><br>
+            OOP, Collections, Exception Handling, JDBC
+        </div>
+        <div class="card">
+            <b>Frontend</b><br>
+            HTML, CSS, JavaScript
+        </div>
+
+        <h2>Projects</h2>
+        <div class="card">Portfolio Website – HTML, CSS, JS</div>
+        <div class="card">Lost or Found Pet Portal – HTML, CSS, JS</div>
+
+        <h2>Declaration</h2>
+        <div class="card">
+            I hereby declare that the information furnished above is true to the best of my knowledge.
+        </div>
+
+    </div>
+
+</body>
+
+</html>
